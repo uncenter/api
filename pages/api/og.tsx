@@ -10,7 +10,7 @@ export default function handler(req) {
 
         const title = searchParams.has("title")
             ? searchParams.get("title")?.slice(0, 100)
-            : "A Blog Post";
+            : "Hello World";
         const date = searchParams.get("date") || "1970-01-01";
         const time = searchParams.get("time") || "0 min read"
         const titleSize = title.length > 15 ? (-5 * title.length + 175) : 100;
